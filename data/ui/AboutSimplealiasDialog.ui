@@ -7,8 +7,11 @@
     <property name="border_width">5</property>
     <property name="icon">../media/simplealias.svg</property>
     <property name="type_hint">normal</property>
-    <property name="program_name">Simplealias</property>
-    <property name="authors"></property>
+    <property name="program_name">Simple Alias</property>
+    <property name="version">0.1a</property>
+    <property name="copyright" translatable="yes">2012 Luke Carter</property>
+    <property name="website">https://github.com/wnaftw/simpleAlias</property>
+    <property name="authors">Luke Carter</property>
     <property name="logo">../media/simplealias.svg</property>
     <child internal-child="vbox">
       <object class="GtkBox" id="dialog-vbox1">

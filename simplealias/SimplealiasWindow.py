@@ -3,6 +3,8 @@
 # This file is in the public domain
 ### END LICENSE
 
+import os
+import getpass
 import gettext
 from gettext import gettext as _
 gettext.textdomain('simplealias')
@@ -18,7 +20,7 @@ from simplealias.PreferencesSimplealiasDialog import PreferencesSimplealiasDialo
 # See simplealias_lib.Window.py for more details about how this class works
 class SimplealiasWindow(Window):
     __gtype_name__ = "SimplealiasWindow"
-    
+
     def finish_initializing(self, builder): # pylint: disable=E1002
         """Set up the main window"""
         super(SimplealiasWindow, self).finish_initializing(builder)
@@ -27,4 +29,9 @@ class SimplealiasWindow(Window):
         self.PreferencesDialog = PreferencesSimplealiasDialog
 
         # Code for other initialization actions should be added here.
+
+        self.fileChooser = self.builder.get_object("fileChooser")
+        self.nameEntry = self.builder.get_object("nameEntry")
+        self.commandEntry = self.builder.get_object("commandEntry")
+        self.textLog = self.builder.get_object("textLog")
 
