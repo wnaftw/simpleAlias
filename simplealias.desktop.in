@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Simplealias
+_Comment=Simplealias application
+Categories=GNOME;Utility;
+Exec=simplealias
+Icon=simplealias
+Terminal=false
+Type=Application
